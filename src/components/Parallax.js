@@ -1,7 +1,7 @@
 import { useRef, useEffect, useState } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-import { Button, Text } from "@mantine/core";
+import { Center, Text, Container } from "@mantine/core";
 
 function Parallax() {
   const [background, setBackground] = useState(20);
@@ -113,14 +113,17 @@ function Parallax() {
           src="/parallax/clouds-right.svg"
         />
 
-        <div ref={copy} className="copy">
+        <Container pt={150}>
           <Text fz={55} fw={500} ta="center">
             Journey with Us
           </Text>
-          <button ref={btn} className="button" onClick={handleButtonClick}>
-            Contact Now
-          </button>
-        </div>
+
+          <Center>
+            <button className="button" onClick={handleButtonClick}>
+              Contact Now
+            </button>
+          </Center>
+        </Container>
       </div>
     </div>
   );

@@ -71,7 +71,7 @@ export default function Feature() {
       <feature.icon
         style={{ width: rem(50), height: rem(50) }}
         stroke={2}
-        color={"#fab005"}
+        color={"#b22222"}
       />
       <Text fz="lg" fw={500} className={classes.cardTitle} mt="md">
         {feature.title}

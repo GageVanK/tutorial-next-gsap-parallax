@@ -7,6 +7,7 @@
   z-index: 100; /* Ensure it stays on top of other elements */
   backdrop-filter: blur(10px); /* Optional: Blur effect for better visibility */
   transition: background-color 0.3s ease; /* Smooth transition for background */
+  background: linear-gradient(#282a57, #b22222);
 }
 
 .navItem {
@@ -17,5 +18,5 @@
 }
 
 .navItem:hover {
-  color: #ffd700; /* Change color on hover, e.g., gold */
+  color: #b22222; /* Change color on hover, e.g., gold */
 }

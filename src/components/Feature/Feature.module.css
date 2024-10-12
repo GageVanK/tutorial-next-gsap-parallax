@@ -32,7 +32,7 @@
   &::after {
     content: "";
     display: block;
-    background-color: #fab005;
+    background-color: #b22222;
     width: rem(45px);
     height: rem(2px);
     margin-top: var(--mantine-spacing-sm);

@@ -25,12 +25,9 @@ import { Fade } from "react-awesome-reveal";
 function Home() {
   return (
     <>
-
-
       {/* Parallax Hero Section */}
       <Parallax />
 
-      {/* About Section */}
       {/* About Section */}
       <Center>
         <Paper p="xl" style={{ backgroundColor: "#282a57", color: "#fafafa" }}>
@@ -57,7 +54,7 @@ function Home() {
               <Fade>
                 <Button
                   variant="outline"
-                  color="yellow"
+                  color="#b22222"
                   size="lg"
                   mt="xl"
                   radius="md"
@@ -114,7 +111,7 @@ function Home() {
                   <Button
                     size="lg"
                     mt="xl"
-                    color="#fab005"
+                    color="#b22222"
                     radius="xl"
                     onClick={() => alert("Contact us via email or phone!")}
                   >
