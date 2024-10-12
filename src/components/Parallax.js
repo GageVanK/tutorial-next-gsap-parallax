@@ -2,6 +2,7 @@ import { useRef, useEffect, useState } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import { Center, Text, Container, useMatches } from "@mantine/core";
+import { Fade } from "react-awesome-reveal";
 
 function Parallax() {
   const [background, setBackground] = useState(20);
@@ -119,15 +120,19 @@ function Parallax() {
         />
 
         <Container pt={170}>
-          <Text fz={fontSize} fw={500} ta="center">
-            Journey with Us
-          </Text>
+          <Fade>
+            <Text fz={fontSize} fw={500} ta="center">
+              Journey with Us
+            </Text>
+          </Fade>
 
-          <Center>
-            <button className="button" onClick={handleButtonClick}>
-              Contact Now
-            </button>
-          </Center>
+          <Fade>
+            <Center>
+              <button className="button" onClick={handleButtonClick}>
+                Contact Now
+              </button>
+            </Center>
+          </Fade>
         </Container>
       </div>
     </div>
