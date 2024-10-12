@@ -60,28 +60,26 @@ const mockdata = [
 export default function Feature() {
   const theme = useMantineTheme();
   const features = mockdata.map((feature) => (
-    <Fade>
-      <Card
-        key={feature.title}
-        shadow="md"
-        radius="md"
-        className={classes.card}
-        h={250}
-        padding="xl"
-      >
-        <feature.icon
-          style={{ width: rem(50), height: rem(50) }}
-          stroke={2}
-          color={"#fab005"}
-        />
-        <Text fz="lg" fw={500} className={classes.cardTitle} mt="md">
-          {feature.title}
-        </Text>
-        <Text fz="sm" c="dimmed" mt="sm">
-          {feature.description}
-        </Text>
-      </Card>
-    </Fade>
+    <Card
+      key={feature.title}
+      shadow="md"
+      radius="md"
+      className={classes.card}
+      h={250}
+      padding="xl"
+    >
+      <feature.icon
+        style={{ width: rem(50), height: rem(50) }}
+        stroke={2}
+        color={"#fab005"}
+      />
+      <Text fz="lg" fw={500} className={classes.cardTitle} mt="md">
+        {feature.title}
+      </Text>
+      <Text fz="sm" c="dimmed" mt="sm">
+        {feature.description}
+      </Text>
+    </Card>
   ));
 
   return (
@@ -97,7 +95,7 @@ export default function Feature() {
         mr={50}
         ml={50}
       >
-        {features}
+        <Fade> {features}</Fade>
       </SimpleGrid>
     </Container>
   );
