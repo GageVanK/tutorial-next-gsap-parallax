@@ -71,7 +71,7 @@ export default function Feature() {
       shadow="md"
       radius="md"
       className={classes.card}
-      h={250}
+      h={242}
       padding="xl"
     >
       <div style={{ height: "35px" }}>
