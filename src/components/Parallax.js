@@ -1,10 +1,15 @@
 import { useRef, useEffect, useState } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-import { Center, Text, Container } from "@mantine/core";
+import { Center, Text, Container, useMatches } from "@mantine/core";
 
 function Parallax() {
   const [background, setBackground] = useState(20);
+  const fontSize = useMatches({
+    base: 39, // Default for extra small screens (below theme.breakpoints.sm)
+    sm: 44, // For small screens (theme.breakpoints.sm and above)
+    lg: 55, // For large screens (theme.breakpoints.lg and above)
+  });
 
   const parallaxRef = useRef(null);
   const mountain3 = useRef(null);
@@ -114,7 +119,7 @@ function Parallax() {
         />
 
         <Container pt={150}>
-          <Text fz={55} fw={500} ta="center">
+          <Text fz={fontSize} fw={500} ta="center">
             Journey with Us
           </Text>
 
