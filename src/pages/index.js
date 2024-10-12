@@ -14,6 +14,7 @@ import {
   ActionIcon,
   Grid,
   Center,
+  UnstyledButton,
 } from "@mantine/core";
 import {
   IconBrandTwitter,
@@ -21,8 +22,16 @@ import {
   IconBrandInstagram,
 } from "@tabler/icons-react";
 import { Fade } from "react-awesome-reveal";
+import { useScrollIntoView } from "@mantine/hooks";
+import { RiArrowDropUpLine } from "react-icons/ri";
 
 function Home() {
+  // Hook to scroll back to top
+  const { scrollIntoView, targetRef } = useScrollIntoView({
+    offset: 0, // Scroll to the top of the page
+    behavior: "smooth", // Smooth scrolling
+  });
+
   return (
     <>
       {/* Parallax Hero Section */}
@@ -54,7 +63,7 @@ function Home() {
               <Fade>
                 <Button
                   variant="outline"
-                  color="#b22222"
+                  color="#FFA500"
                   size="lg"
                   mt="xl"
                   radius="md"
@@ -125,6 +134,18 @@ function Home() {
       </Paper>
 
       <Space h={100} />
+
+      {/* Scroll to Top Button */}
+      <Center>
+        <UnstyledButton onClick={() => scrollIntoView()}>
+          <Center>
+            <RiArrowDropUpLine style={{ height: "30px", width: "30px" }} />
+          </Center>
+          <Text ta="center" size="sm" fs="italic">
+            Back to Top
+          </Text>
+        </UnstyledButton>
+      </Center>
 
       <Group justify="space-between" p="md" mr={30} ml={30}>
         <Text fz={20} fw={300} mr={10} mb={10}>

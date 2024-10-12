@@ -14,7 +14,13 @@ import classes from "./Feature.module.css";
 import React from "react";
 import { AiFillFire } from "react-icons/ai";
 import { MdElectricBike, MdOutlineLocalCafe } from "react-icons/md";
-import { GiDeliveryDrone, GiCampingTent } from "react-icons/gi";
+import { GiDeliveryDrone, GiThreeFriends } from "react-icons/gi";
+import { GiCampfire } from "react-icons/gi";
+import { TiGroup } from "react-icons/ti";
+import { GiPartyPopper } from "react-icons/gi";
+import { IoIosCafe } from "react-icons/io";
+
+import { LuPartyPopper } from "react-icons/lu";
 import { MdGroups } from "react-icons/md";
 import { Fade } from "react-awesome-reveal";
 // Mock data array with services information and react-icons
@@ -22,8 +28,8 @@ const mockdata = [
   {
     title: "Firewood Delivery",
     description:
-      "Enjoy a cozy campfire with our premium firewood delivered directly to your site.",
-    icon: AiFillFire, // Icon from react-icons
+      "Enjoy a cozy campfire with our premium firewood delivered directly to your site – free delivery included!",
+    icon: GiCampfire, // Icon from react-icons
   },
   {
     title: "E-Bike Rentals",
@@ -47,13 +53,13 @@ const mockdata = [
     title: "Café & Refreshments",
     description:
       "Refuel at our café with delicious food and a wide variety of hot and cold beverages.",
-    icon: MdOutlineLocalCafe, // Icon from react-icons
+    icon: IoIosCafe, // Icon from react-icons
   },
   {
-    title: "Camping Essentials & More",
+    title: "Offroad Fun",
     description:
-      "Stock up on everything you need for a comfortable and safe camping experience.",
-    icon: GiCampingTent, // Icon from react-icons
+      "Gear up for offroad excitement with thrilling activities for both experts and newcomers alike!",
+    icon: GiPartyPopper, // Icon from react-icons
   },
 ];
 
@@ -68,11 +74,13 @@ export default function Feature() {
       h={250}
       padding="xl"
     >
-      <feature.icon
-        style={{ width: rem(50), height: rem(50) }}
-        stroke={2}
-        color={"#b22222"}
-      />
+      <div style={{ height: "35px" }}>
+        <feature.icon
+          style={{ width: rem(50), height: rem(50) }}
+          stroke={2}
+          color={"#b22222"}
+        />
+      </div>
       <Text fz="lg" fw={500} className={classes.cardTitle} mt="md">
         {feature.title}
       </Text>
