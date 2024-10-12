@@ -49,7 +49,7 @@ function Parallax() {
       tl.to(
         sun.current,
         {
-          y: "+=210", // Moves down
+          y: "+=500", // Moves down
         },
         0
       );
@@ -118,7 +118,7 @@ function Parallax() {
           src="/parallax/clouds-right.svg"
         />
 
-        <Container pt={150}>
+        <Container pt={170}>
           <Text fz={fontSize} fw={500} ta="center">
             Journey with Us
           </Text>
