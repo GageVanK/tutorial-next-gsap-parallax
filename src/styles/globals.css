@@ -57,11 +57,13 @@ body {
 }
 
 .clouds-left {
+  top: 10%;
   left: 0;
   width: 20%;
 }
 
 .clouds-right {
+  top: 20%;
   right: 0;
   width: 20%;
 }
