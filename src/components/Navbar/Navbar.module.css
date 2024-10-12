@@ -1,0 +1,21 @@
+.navbar {
+  position: fixed; /* Fixed position to stay at the top */
+  top: 0; /* Stay at the top of the viewport */
+  left: 0; /* Align to the left */
+  width: 100%; /* Full width of the screen */
+  padding: 1rem 2rem; /* Padding for spacing */
+  z-index: 100; /* Ensure it stays on top of other elements */
+  backdrop-filter: blur(10px); /* Optional: Blur effect for better visibility */
+  transition: background-color 0.3s ease; /* Smooth transition for background */
+}
+
+.navItem {
+  color: #ffffff; /* Change text color to fit your design */
+  margin: 0 1rem; /* Add spacing between items */
+  cursor: pointer; /* Show pointer cursor on hover */
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.navItem:hover {
+  color: #ffd700; /* Change color on hover, e.g., gold */
+}

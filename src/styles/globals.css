@@ -1,122 +1,208 @@
 *,
 html,
 body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 :root {
-    --primaryColor: #282a57;
-    --secondaryColor: #e4e4e4;
+  --primaryColor: #282a57;
+  --secondaryColor: #fafafa;
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;
-    background-color: var(--primaryColor);
-    color: var(--secondaryColor);
+  font-family: "Nunito", sans-serif !important;
+  background-color: var(--primaryColor) !important;
+  color: var(--secondaryColor) !important;
 }
 
 .parallax-outer {
-    overflow: hidden;
+  overflow: hidden;
 }
 
 .parallax {
-    height: 110vh;
-    width: 100%;
-    position: relative;
+  height: 110vh;
+  width: 100%;
+  position: relative;
 }
 
 .parallax img {
-    position: absolute;
+  position: absolute;
 }
-
 
 .mountain-3,
 .mountain-2,
 .mountain-1 {
-    width: 100%;
-    bottom: 0;
-    z-index: 3;
+  width: 100%;
+  bottom: 0;
+  z-index: 3;
 }
 
 .mountain-2 {
-    bottom: 20px;
-    z-index: 2;
+  bottom: 20px;
+  z-index: 2;
 }
 
 .mountain-1 {
-    bottom: 40px;
-    z-index: 1;
+  bottom: 40px;
+  z-index: 1;
 }
 
 .sun {
-    top: 70%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 40%;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40%;
 }
 
 .clouds-left {
-    left: 0;
-    width: 20%;
+  left: 0;
+  width: 20%;
 }
 
 .clouds-right {
-    right: 0;
-    width: 20%;
+  right: 0;
+  width: 20%;
 }
 
 .clouds-bottom {
-    bottom: 0px;
-    width: 100%;
+  bottom: 0px;
+  width: 100%;
 }
 
 .stars {
-    top: -550px;
-    left: 0;
-    width: 100%;
+  top: -550px;
+  left: 0;
+  width: 100%;
 }
 
 .copy {
-    position: absolute;
-    bottom: 0%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 0;
-    color: var(--secondaryColor);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    opacity: 0;
+  position: absolute;
+  bottom: 25%; /* Adjust to position the text above the sun */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+  color: var(--secondaryColor);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  opacity: 1; /* Make it visible initially */
+  transition: opacity 0.5s ease; /* Smooth transition for opacity */
 }
 
 .copy h1 {
-    font-size: 10rem;
+  font-size: clamp(3rem, 5vw + 1rem, 5rem); /* Responsive font size */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Text shadow for 3D effect */
+  margin-bottom: 20px; /* Add space between heading and button */
 }
 
 .copy span {
-    background-color: var(--secondaryColor);
-    color: var(--primaryColor);
-    padding: 1rem;
-    font-weight: 800;
-    border-radius: 0.5rem;
-    opacity: 0;
+  background-color: var(--secondaryColor);
+  color: var(--primaryColor);
+  padding: 1rem;
+  padding-right: 50px;
+  padding-left: 50px;
+  font-weight: 900;
+  border-radius: 0.5rem;
+  opacity: 1; /* Ensure the button is visible */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2), 4px 4px 15px rgba(0, 0, 0, 0.15),
+    8px 8px 30px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  position: relative; /* Required for pseudo-element positioning */
+  cursor: pointer;
+  overflow: hidden; /* Hide overflow for ripple effect */
+  z-index: 10; /* Ensure it’s on top and clickable */
+  display: inline-block; /* Ensure proper rendering and sizing */
+  text-align: center; /* Center align text */
+}
+
+/* Adjust the size and properties of the pseudo-element */
+.copy span::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 150%; /* Adjust size to be visible */
+  height: 150%; /* Adjust size to be visible */
+  background: #fab005; /* Ripple color */
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(0); /* Start small */
+  opacity: 0.6; /* Initial opacity */
+  pointer-events: none; /* Prevent interfering with hover state */
+  transition: transform 0.4s, opacity 0.6s; /* Smooth animation */
+}
+
+/* Hover state for ripple effect */
+.copy span:hover::before {
+  transform: translate(-50%, -50%) scale(1.5); /* Expand ripple */
+  opacity: 0; /* Fade out */
+}
+
+.copy span:hover {
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.25), 6px 6px 20px rgba(0, 0, 0, 0.2),
+    10px 10px 40px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+}
+
+.copy span:active::before {
+  transform: translate(-50%, -50%) scale(1); /* Add scale back for ripple click */
+  opacity: 0.3; /* Highlight the ripple */
+}
+
+.copy span:active {
+  transform: translateY(0); /* Return to normal position on click */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2), 4px 4px 15px rgba(0, 0, 0, 0.15),
+    8px 8px 30px rgba(0, 0, 0, 0.1);
 }
 
 .about {
-    color: var(--secondaryColor);
-    padding-left: 10%;
-    padding-bottom: 20%;
+  color: var(--secondaryColor);
+  padding-left: 10%;
+  padding-bottom: 20%;
 }
 
 .about h2 {
-    color: var(--secondaryColor);
-    font-size: 5rem;
+  color: var(--secondaryColor);
+  font-size: 3rem;
 }
 
 .about p {
-    margin-top: 20px;
-    width: 50%;
+  margin-top: 20px;
+  width: 50%;
+}
+
+.feature {
+  color: black;
+  padding-left: 10%;
+  padding-bottom: 20%;
+  background-color: white !important;
+}
+
+/* Styles for the button */
+.button {
+  background-color: var(--secondaryColor);
+  color: var(--primaryColor);
+  padding: 1rem;
+  padding-right: 50px;
+  padding-left: 50px;
+  font-weight: 900;
+  border-radius: 0.5rem;
+  opacity: 1;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2), 4px 4px 15px rgba(0, 0, 0, 0.15),
+    8px 8px 30px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  border: none; /* Remove default button border */
+  text-align: center; /* Center align text */
+  z-index: 10; /* Ensure it’s on top and clickable */
+}
+
+.button:hover {
+  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.25), 6px 6px 30px rgba(0, 0, 0, 0.2),
+    10px 10px 45px rgba(0, 0, 0, 0.15);
+  transform: translateY(-3px); /* Lift the button slightly */
 }
