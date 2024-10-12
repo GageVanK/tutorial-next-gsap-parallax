@@ -24,6 +24,7 @@ import {
 import { Fade } from "react-awesome-reveal";
 import { useScrollIntoView } from "@mantine/hooks";
 import { RiArrowDropUpLine } from "react-icons/ri";
+import { RiArrowDropUpFill } from "react-icons/ri";
 
 function Home() {
   // Hook to scroll back to top
@@ -136,16 +137,20 @@ function Home() {
       <Space h={100} />
 
       {/* Scroll to Top Button */}
-      <Center>
-        <UnstyledButton onClick={() => scrollIntoView()}>
-          <Center>
-            <RiArrowDropUpLine style={{ height: "30px", width: "30px" }} />
-          </Center>
-          <Text ta="center" size="sm" fs="italic">
-            Back to Top
-          </Text>
-        </UnstyledButton>
-      </Center>
+      <Fade>
+        <Center>
+          <UnstyledButton onClick={() => scrollIntoView()}>
+            <Center>
+              <RiArrowDropUpFill style={{ height: "40px", width: "70px" }} />
+            </Center>
+            <Text ta="center" size="sm" fs="italic" mt={-10}>
+              Back to Top
+            </Text>
+          </UnstyledButton>
+        </Center>
+      </Fade>
+
+      <Space h={50} />
 
       <Group justify="space-between" p="md" mr={30} ml={30}>
         <Text fz={20} fw={300} mr={10} mb={10}>
