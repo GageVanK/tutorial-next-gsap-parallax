@@ -71,20 +71,19 @@ export default function Feature() {
       shadow="md"
       radius="md"
       className={classes.card}
-      h={242}
+      h={275}
       padding="xl"
     >
       <div style={{ height: "35px" }}>
         <feature.icon
           style={{ width: rem(50), height: rem(50) }}
-          stroke={2}
           color={"#b22222"}
         />
       </div>
       <Text fz="lg" fw={500} className={classes.cardTitle} mt="md">
         {feature.title}
       </Text>
-      <Text fz="sm" c="dimmed" mt="sm">
+      <Text fz="md" c="dimmed" mt="sm">
         {feature.description}
       </Text>
     </Card>

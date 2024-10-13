@@ -45,7 +45,7 @@ function Home() {
             <div>
               <Fade>
                 <Title color="white">
-                  Fuel Your Adventure on the Arizona Peace Trail
+                  Fuel Your Adventure at the UTV Pit Stop
                 </Title>
               </Fade>
 
@@ -144,7 +144,7 @@ function Home() {
               <RiArrowDropUpFill style={{ height: "40px", width: "70px" }} />
             </Center>
             <Text ta="center" size="sm" fs="italic" mt={-10}>
-              Back to Top
+              Back to top
             </Text>
           </UnstyledButton>
         </Center>
@@ -157,26 +157,7 @@ function Home() {
           UTV Pit Stop
         </Text>
 
-        <Group gap={0} justify="flex-end" wrap="nowrap">
-          <ActionIcon size="lg" color="gray" variant="subtle">
-            <IconBrandTwitter
-              style={{ width: rem(18), height: rem(18) }}
-              stroke={1.5}
-            />
-          </ActionIcon>
-          <ActionIcon size="lg" color="gray" variant="subtle">
-            <IconBrandYoutube
-              style={{ width: rem(18), height: rem(18) }}
-              stroke={1.5}
-            />
-          </ActionIcon>
-          <ActionIcon size="lg" color="gray" variant="subtle">
-            <IconBrandInstagram
-              style={{ width: rem(18), height: rem(18) }}
-              stroke={1.5}
-            />
-          </ActionIcon>
-        </Group>
+        <Group gap={0} justify="flex-end" wrap="nowrap"></Group>
       </Group>
     </>
   );

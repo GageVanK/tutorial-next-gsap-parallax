@@ -17,12 +17,6 @@ function Navbar() {
               Home
             </Text>
           </UnstyledButton>
-          
-          <UnstyledButton component={Link} href={"/About"}>
-            <Text className={styles.navItem} fs="italic" size="lg">
-              About
-            </Text>
-          </UnstyledButton>
 
           <UnstyledButton component={Link} href={"/Contact"}>
             <Text className={styles.navItem} fs="italic" size="lg">
