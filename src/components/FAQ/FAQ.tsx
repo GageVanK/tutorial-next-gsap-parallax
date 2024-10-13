@@ -27,10 +27,12 @@ export function FaqContainer() {
                 </Grid.Col>
                 <Grid.Col span={{ base: 12, md: 6 }}>
                   <Fade>
-                    <Title order={2} ta="left" className={classes.title}>
+                    <Title ta="left" c="black">
                       Frequently Asked Questions
                     </Title>
                   </Fade>
+
+                  <Space h="lg" />
 
                   <Accordion
                     chevronPosition="right"
