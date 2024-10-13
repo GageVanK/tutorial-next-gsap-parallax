@@ -33,15 +33,13 @@ export default function Contact() {
             align="left"
             spacing="xs"
           >
-            <Fade>
-              <Image
-                src={"/Contactus.gif"}
-                alt="Contact Storyset gif"
-                maw={500}
-                mah={500}
-                radius="xl"
-              />
-            </Fade>
+            <Image
+              src={"/Contactus.gif"}
+              alt="Contact Storyset gif"
+              maw={500}
+              mah={500}
+              radius="xl"
+            />
 
             <div
               style={{

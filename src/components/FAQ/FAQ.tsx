@@ -21,9 +21,7 @@ export function FaqContainer() {
             <Container size="lg">
               <Grid id="faq-grid" gutter={50}>
                 <Grid.Col span={{ base: 12, md: 6 }}>
-                  <Fade>
-                    <Image src={"/FAQs.gif"} alt="Frequently Asked Questions" />
-                  </Fade>
+                  <Image src={"/FAQs.gif"} alt="Frequently Asked Questions" />
                 </Grid.Col>
                 <Grid.Col span={{ base: 12, md: 6 }}>
                   <Fade>
