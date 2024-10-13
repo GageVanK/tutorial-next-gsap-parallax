@@ -27,7 +27,7 @@ export default function Contact() {
       <Space h={169} />
 
       <Container size="xl">
-        <Paper p="md" radius="sm">
+        <Paper p="xl" radius="sm">
           <SimpleGrid
             cols={{ base: 1, sm: 1, lg: 2 }}
             align="left"
