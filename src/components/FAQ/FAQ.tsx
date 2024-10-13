@@ -41,7 +41,7 @@ export function FaqContainer() {
                     <Fade>
                       <Accordion.Item value="what-to-bring">
                         <Accordion.Control>
-                          <Text size="lg" c="black">
+                          <Text size="lg" fw={500} fs="italic" c="black">
                             What should I bring for a guided UTV tour?
                           </Text>
                         </Accordion.Control>
@@ -59,7 +59,7 @@ export function FaqContainer() {
                     <Fade>
                       <Accordion.Item value="delivery">
                         <Accordion.Control>
-                          <Text size="lg" c="black">
+                          <Text size="lg" fw={500} fs="italic" c="black">
                             Where do you offer free firewood delivery, and how
                             does it work?
                           </Text>
@@ -79,28 +79,9 @@ export function FaqContainer() {
                     </Fade>
 
                     <Fade>
-                      <Accordion.Item value="cancel-policy">
-                        <Text size="lg" c="black">
-                          <Accordion.Control>
-                            Is the Arizona Peace Trail suitable for beginners?
-                          </Accordion.Control>
-                        </Text>
-                        <Accordion.Panel>
-                          <Text c="black">
-                            While portions of the trail are suitable for
-                            beginners, some sections can be challenging, with
-                            rough terrain and steep inclines. We recommend
-                            guided tours for first-time riders or those
-                            unfamiliar with the trail.
-                          </Text>
-                        </Accordion.Panel>
-                      </Accordion.Item>
-                    </Fade>
-
-                    <Fade>
                       <Accordion.Item value="drone-services">
                         <Accordion.Control>
-                          <Text size="lg" c="black">
+                          <Text size="lg" fw={500} fs="italic" c="black">
                             What are the benefits of using drone services for my
                             adventure?
                           </Text>
@@ -124,7 +105,7 @@ export function FaqContainer() {
                     <Fade>
                       <Accordion.Item value="ebike-rentals">
                         <Accordion.Control>
-                          <Text size="lg" c="black">
+                          <Text size="lg" fw={500} fs="italic" c="black">
                             How long can I rent an e-bike for?
                           </Text>
                         </Accordion.Control>
@@ -133,6 +114,26 @@ export function FaqContainer() {
                             Our e-bikes are available for half-day, full-day,
                             and multi-day rentals. Feel free to contact us for
                             pricing details and extended rental options.
+                          </Text>
+                        </Accordion.Panel>
+                      </Accordion.Item>
+                    </Fade>
+
+                    <Fade>
+                      <Accordion.Item value="beginners">
+                        <Accordion.Control>
+                          <Text size="lg" fw={500} fs="italic" c="black">
+                            Is the Arizona Peace Trail suitable for beginners?
+                          </Text>
+                        </Accordion.Control>
+
+                        <Accordion.Panel>
+                          <Text c="black">
+                            While portions of the trail are suitable for
+                            beginners, some sections can be challenging, with
+                            rough terrain and steep inclines. We recommend
+                            guided tours for first-time riders or those
+                            unfamiliar with the trail.
                           </Text>
                         </Accordion.Panel>
                       </Accordion.Item>
