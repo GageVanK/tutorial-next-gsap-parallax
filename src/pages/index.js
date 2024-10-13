@@ -150,9 +150,9 @@ function Home() {
         </Center>
       </Fade>
 
-      <Space h={50} />
+      <Space h={77} />
 
-      <Group justify="space-between" p="md" mr={30} ml={30}>
+      <Group justify="space-between" p="md" mr={30} ml={30} visibleFrom="md">
         <Text fz={20} fw={300} mr={10} mb={10}>
           UTV Pit Stop
         </Text>
