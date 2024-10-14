@@ -53,13 +53,10 @@ function Home() {
                 <Text size="lg" mt="md">
                   Nestled along the iconic Arizona Peace Trail, Desert Brezz is
                   your ultimate pit stop for a seamless and thrilling outdoor
-                  experience. Whether you're gearing up for a day of exploration
-                  or winding down after an exhilarating ride, we make your
-                  adventure a brezz. From free firewood delivery and e-bike
-                  rentals to guided UTV tours, professional drone footage
-                  services, and a café serving refreshing drinks and delicious
-                  meals—Desert Brezz has everything you need to make your time
-                  on the trail truly unforgettable.
+                  experience. From free firewood delivery and e-bike rentals to
+                  guided UTV tours, professional drone footage services, and a
+                  café serving refreshing drinks and delicious meals-we have
+                  everything you need to make your time on the trail a Brezz.
                 </Text>
               </Fade>
               <Fade>
@@ -111,10 +108,10 @@ function Home() {
               <Fade>
                 <Text align="center" size="lg">
                   Ready to fuel your adventure on the Arizona Peace Trail?
-                  Whether you have questions about our services, need assistance
-                  with your bookings, or simply want to chat about the best
-                  trails and local spots, we're here to make your experience
-                  unforgettable.
+                  Whether you&apos;re looking for details on our services, need
+                  help with booking, or just want to chat about the top trails
+                  and hidden gems, we&apos;re here to ensure your journey is
+                  nothing short of extraordinary.
                 </Text>
               </Fade>
               <Center>
