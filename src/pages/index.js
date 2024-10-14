@@ -45,20 +45,21 @@ function Home() {
             <div>
               <Fade>
                 <Title color="white">
-                  Fuel Your Adventure at the UTV Pit Stop
+                  Fuel Your Adventure at the Desert Brezz Pit Stop
                 </Title>
               </Fade>
 
               <Fade>
                 <Text size="lg" mt="md">
-                  Nestled along the iconic Arizona Peace Trail, we are your
-                  ultimate pit stop for a seamless and thrilling outdoor
-                  experience. Whether you’re gearing up for a day of exploration
-                  or winding down after an exhilarating ride, we have everything
-                  you need to make your adventure unforgettable. From firewood
-                  delivery and e-bike rentals to guided UTV tours, drone footage
-                  services, a café with delicious food and drinks, and more —
-                  experience the best of the trail with us.
+                  Nestled along the iconic Arizona Peace Trail, Desert Brezz is
+                  your ultimate pit stop for a seamless and thrilling outdoor
+                  experience. Whether you're gearing up for a day of exploration
+                  or winding down after an exhilarating ride, we make your
+                  adventure a brezz. From free firewood delivery and e-bike
+                  rentals to guided UTV tours, professional drone footage
+                  services, and a café serving refreshing drinks and delicious
+                  meals—Desert Brezz has everything you need to make your time
+                  on the trail truly unforgettable.
                 </Text>
               </Fade>
               <Fade>
