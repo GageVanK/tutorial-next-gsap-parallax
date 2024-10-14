@@ -154,7 +154,7 @@ function Home() {
 
       <Group justify="space-between" p="md" mr={30} ml={30} visibleFrom="md">
         <Text fz={20} fw={300} mr={10} mb={10}>
-          UTV Pit Stop
+          Desert Brezz Pit Stop
         </Text>
 
         <Group gap={0} justify="flex-end" wrap="nowrap"></Group>

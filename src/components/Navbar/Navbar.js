@@ -8,7 +8,7 @@ function Navbar() {
     <Group className={styles.navbar} p="md" justify="center">
       <Group justify="space-between" gap={100}>
         <Text fz={30} fw={700} ta="left">
-          UTV Pit Stop
+          Desert Brezz Pit Stop
         </Text>
 
         <Group visibleFrom="lg">
