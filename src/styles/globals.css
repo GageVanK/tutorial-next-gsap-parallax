@@ -12,7 +12,7 @@ body {
 }
 
 body {
-  font-family: "Nunito", sans-serif !important;
+  font-family: "Spectral SC", serif !important;
   background-color: var(--primaryColor) !important;
   color: var(--secondaryColor) !important;
 }
