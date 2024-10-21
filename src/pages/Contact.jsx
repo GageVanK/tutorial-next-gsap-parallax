@@ -83,69 +83,7 @@ export default function Contact() {
                       <Text c="black" size="sm" fs="italic" ta="left">
                         Phone
                       </Text>
-                      <Text c="black" fs="italic">
-                        Company Number
-                      </Text>
-                    </div>
-                  </Group>
-                </div>
-              </Fade>
-
-              <Space h="lg" />
-
-              <Fade>
-                <div>
-                  <Group>
-                    <ThemeIcon
-                      color="#b22222"
-                      variant="light"
-                      size="xl"
-                      aria-label="Settings"
-                      p={5}
-                    >
-                      <IconAt
-                        style={{ width: rem(100), height: rem(77) }}
-                        stroke={1.5}
-                      />
-                    </ThemeIcon>
-
-                    <div>
-                      <Text c="black" size="sm" fs="italic" ta="left">
-                        Socials
-                      </Text>
-                      <Text c="black" fs="italic">
-                        Company Social
-                      </Text>
-                    </div>
-                  </Group>
-                </div>
-              </Fade>
-
-              <Space h="lg" />
-
-              <Fade>
-                <div>
-                  <Group>
-                    <ThemeIcon
-                      color="#b22222"
-                      variant="light"
-                      size="xl"
-                      aria-label="Settings"
-                      p={5}
-                    >
-                      <IconMail
-                        style={{ width: rem(100), height: rem(77) }}
-                        stroke={1.5}
-                      />
-                    </ThemeIcon>
-
-                    <div>
-                      <Text c="black" size="sm" fs="italic" ta="left">
-                        Email
-                      </Text>
-                      <Text c="black" fs="italic">
-                        Company Email
-                      </Text>
+                      <Text c="black">(928) 662-8897</Text>
                     </div>
                   </Group>
                 </div>
@@ -211,7 +149,7 @@ export default function Contact() {
                   mt="xl"
                   color="#b22222"
                   radius="xl"
-                  onClick={() => alert("Contact us via email or phone!")}
+                  onClick={() => (window.location.href = "tel:+19286628897")}
                   fullWidth
                 >
                   Contact Now
