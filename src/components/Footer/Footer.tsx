@@ -59,10 +59,9 @@ export default function Footer() {
         </ActionIcon>
 
         <ActionIcon
-          //component="a"
-          //href="https://www.instagram.com/acexaurora"
-          //target="_blank"
-          //rel="noopener noreferrer"
+          target="_blank"
+          component="a"
+          href="tel:+1 9286628897"
           variant="gradient"
           gradient={{ from: "#282a57", to: "#b22222", deg: 45 }}
           size={55}

@@ -149,7 +149,9 @@ export default function Contact() {
                   mt="xl"
                   color="#b22222"
                   radius="xl"
-                  onClick={() => (window.location.href = "tel:+19286628897")}
+                  target="_blank"
+                  component="a"
+                  href="tel:+1 9286628897"
                   fullWidth
                 >
                   Contact Now

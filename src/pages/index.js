@@ -66,7 +66,9 @@ function Home() {
                   size="lg"
                   mt="xl"
                   radius="md"
-                  onClick={() => (window.location.href = "tel:+19286628897")}
+                  target="_blank"
+                  component="a"
+                  href="tel:+1 9286628897"
                 >
                   Learn More
                 </Button>
@@ -121,7 +123,9 @@ function Home() {
                     mt="xl"
                     color="#b22222"
                     radius="xl"
-                    onClick={() => (window.location.href = "tel:+19286628897")}
+                    target="_blank"
+                    component="a"
+                    href="tel:+1 9286628897"
                   >
                     Contact Now
                   </Button>
