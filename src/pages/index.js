@@ -44,9 +44,9 @@ function Home() {
           <Container size="md">
             <div>
               <Fade>
-                <Title color="white">
+                <Text fz={28} fw={500} c="white">
                   Fuel Your Adventure at the Desert Brezz Pit Stop
-                </Title>
+                </Text>
               </Fade>
 
               <Fade>
@@ -66,7 +66,7 @@ function Home() {
                   size="lg"
                   mt="xl"
                   radius="md"
-                  onClick={() => alert("Learn more about our services")}
+                  onClick={() => (window.location.href = "tel:+19286628897")}
                 >
                   Learn More
                 </Button>
@@ -101,9 +101,9 @@ function Home() {
           <Grid justify="center">
             <div>
               <Fade>
-                <Title align="center" mb="xl">
+                <Text fz={28} fw={500} c="white" ta="center" mb="xl">
                   Get In Touch
-                </Title>
+                </Text>
               </Fade>
               <Fade>
                 <Text align="center" size="lg">
@@ -121,7 +121,7 @@ function Home() {
                     mt="xl"
                     color="#b22222"
                     radius="xl"
-                    onClick={() => alert("Contact us via email or phone!")}
+                    onClick={() => (window.location.href = "tel:+19286628897")}
                   >
                     Contact Now
                   </Button>

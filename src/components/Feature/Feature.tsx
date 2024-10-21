@@ -91,9 +91,9 @@ export default function Feature() {
 
   return (
     <Container size="md" py="xl">
-      <Title ta="center" mb="xl">
+      <Text ta="center" mb="xl" fz={28} fw={500}>
         Our Services
-      </Title>
+      </Text>
 
       <SimpleGrid cols={{ base: 1, md: 3 }} spacing="xl" mt={50}>
         <Fade> {features}</Fade>

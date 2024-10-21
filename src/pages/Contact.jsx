@@ -49,7 +49,9 @@ export default function Contact() {
               }}
             >
               <Fade>
-                <Title c="black">Contact Us</Title>
+                <Text fz={28} fw={500} c="black">
+                  Contact Us
+                </Text>
               </Fade>
 
               <Fade>

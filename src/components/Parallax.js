@@ -79,7 +79,7 @@ function Parallax() {
   }, []);
 
   const handleButtonClick = () => {
-    alert("Button clicked!"); // Replace this with your desired action
+    window.location.href = "tel:+19286628897";
   };
 
   return (

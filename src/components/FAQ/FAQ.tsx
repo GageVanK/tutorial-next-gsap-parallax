@@ -25,9 +25,9 @@ export function FaqContainer() {
                 </Grid.Col>
                 <Grid.Col span={{ base: 12, md: 6 }}>
                   <Fade>
-                    <Title ta="left" c="black">
+                    <Text ta="center" fz={28} fw={500} c="black">
                       Frequently Asked Questions
-                    </Title>
+                    </Text>
                   </Fade>
 
                   <Space h="lg" />
